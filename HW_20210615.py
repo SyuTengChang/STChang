@@ -43,7 +43,7 @@ dfstd = df.std(axis = 0)
 
 Deviation = df - dfmean  #離差
 
-df_DelOutlier = df1[ Deviation.abs() <= 3*dfstd ] #取不超過3個標準差之data
+df_DelOutlier = df[ Deviation.abs() <= 3*dfstd ] #取不超過3個標準差之data
 
 
 
